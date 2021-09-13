@@ -1,0 +1,66 @@
+Importance of components:
+                           PC1     PC2     PC3     PC4     PC5      PC6     PC7
+Standard deviation     27.0605 21.5713 19.4071 18.5607 15.7811 14.42967 7.30802
+Proportion of Variance  0.2929  0.1861  0.1506  0.1378  0.0996  0.08327 0.02136
+Cumulative Proportion   0.2929  0.4789  0.6296  0.7673  0.8669  0.95022 0.97158
+                           PC8     PC9    PC10    PC11    PC12    PC13    PC14
+Standard deviation     4.48531 3.71386 3.07335 3.01997 2.65898 2.39475 2.15025
+Proportion of Variance 0.00805 0.00552 0.00378 0.00365 0.00283 0.00229 0.00185
+Cumulative Proportion  0.97963 0.98515 0.98892 0.99257 0.99540 0.99769 0.99954
+                          PC15    PC16    PC17      PC18
+Standard deviation     0.72066 0.58317 0.53813 1.291e-13
+Proportion of Variance 0.00021 0.00014 0.00012 0.000e+00
+Cumulative Proportion  0.99975 0.99988 1.00000 1.000e+00
+                               PC1        PC2        PC3
+BC16_fliv_N_1.sort.bam -16.1759439  -9.063631 -36.868056
+BC16_fliv_N_2.sort.bam -16.0296013  -9.239768 -36.973095
+BC16_fliv_O_1.sort.bam  26.2357661   9.799708   8.231472
+BC16_fliv_O_2.sort.bam  26.2864120   9.801812   8.318261
+BC16_fliv_P_1.sort.bam  27.6631629  10.333516   9.997994
+BC16_fliv_P_2.sort.bam  27.6620293  10.303864  10.019139
+BC16_fliv_Q_1.sort.bam   5.7993783   1.081122   2.113011
+BC16_fliv_Q_2.sort.bam   6.0965529   1.172599   2.167152
+BC16_fliv_R_1.sort.bam -17.9231831 -51.214475  22.247053
+BC16_fliv_R_2.sort.bam -17.7053314 -51.195774  22.551695
+CTRL_fliv_B_1.sort.bam -59.1524396  30.892924  14.731190
+CTRL_fliv_B_2.sort.bam -59.0083521  31.063628  15.008730
+CTRL_fliv_D_1.sort.bam  24.5275139   7.989127   7.518624
+CTRL_fliv_D_2.sort.bam  24.6609028   8.023716   7.573884
+CTRL_fliv_E_1.sort.bam   7.7644982   3.381435   1.280229
+CTRL_fliv_E_2.sort.bam   7.9197578   3.363233   1.520584
+CTRL_fliv_F_1.sort.bam   0.5635025  -3.320422 -29.740239
+CTRL_fliv_F_2.sort.bam   0.8153748  -3.172614 -29.697627
+Importance of components:
+                          PC1    PC2    PC3     PC4     PC5     PC6    PC7
+Standard deviation     6.4922 3.2797 2.8528 2.21843 2.11857 1.72279 1.3471
+Proportion of Variance 0.5504 0.1404 0.1063 0.06426 0.05861 0.03876 0.0237
+Cumulative Proportion  0.5504 0.6908 0.7971 0.86138 0.91999 0.95874 0.9824
+                          PC8     PC9    PC10    PC11    PC12    PC13   PC14
+Standard deviation     0.7000 0.55680 0.37028 0.35893 0.31807 0.28956 0.2765
+Proportion of Variance 0.0064 0.00405 0.00179 0.00168 0.00132 0.00109 0.0010
+Cumulative Proportion  0.9888 0.99289 0.99468 0.99636 0.99768 0.99878 0.9998
+                          PC15    PC16    PC17      PC18
+Standard deviation     0.10776 0.05860 0.04679 1.002e-14
+Proportion of Variance 0.00015 0.00004 0.00003 0.000e+00
+Cumulative Proportion  0.99993 0.99997 1.00000 1.000e+00
+                              PC1         PC2       PC3
+BC16_fliv_N_1.sort.bam -5.9052855 -1.84848041 -2.009029
+BC16_fliv_N_2.sort.bam -5.9925437 -1.83578044 -2.101868
+BC16_fliv_O_1.sort.bam -3.1616596  1.69423274  2.994528
+BC16_fliv_O_2.sort.bam -3.1073181  1.64913147  2.945800
+BC16_fliv_P_1.sort.bam -2.8476426  1.66190922  2.903454
+BC16_fliv_P_2.sort.bam -2.8701412  1.67758282  2.895690
+BC16_fliv_Q_1.sort.bam -4.6946543  0.11497717  1.673141
+BC16_fliv_Q_2.sort.bam -4.7163931  0.09503081  1.532018
+BC16_fliv_R_1.sort.bam -6.9141817 -4.16338493 -4.027096
+BC16_fliv_R_2.sort.bam -6.9520775 -4.20262520 -3.999545
+CTRL_fliv_B_1.sort.bam 12.8778593 -5.44732387  1.069550
+CTRL_fliv_B_2.sort.bam 12.9896437 -5.71441865  1.223974
+CTRL_fliv_D_1.sort.bam -0.5801428  1.46855603  1.053674
+CTRL_fliv_D_2.sort.bam -0.5929433  1.47299400  1.050908
+CTRL_fliv_E_1.sort.bam  4.2318344  1.17571038  1.368244
+CTRL_fliv_E_2.sort.bam  4.1968715  1.21335748  1.373165
+CTRL_fliv_F_1.sort.bam  6.9880381  5.50663920 -4.971089
+CTRL_fliv_F_2.sort.bam  7.0507365  5.48189218 -4.975521
+null device 
+          1 

@@ -1,0 +1,18 @@
+hisat2 -q -p 16 --pen-noncansplice 1000000 -x mm10/genome -1 BC16_fliv_Q_2.fq -2 BC16_fliv_Q_2.fq  -S BC16_fliv_Q_2.sam
+Warning: Same mate file "BC16_fliv_Q_2.fq" appears as argument to both -1 and -2
+27896902 reads; of these:
+  27896902 (100.00%) were paired; of these:
+    27883882 (99.95%) aligned concordantly 0 times
+    31 (0.00%) aligned concordantly exactly 1 time
+    12989 (0.05%) aligned concordantly >1 times
+    ----
+    27883882 pairs aligned concordantly 0 times; of these:
+      10896265 (39.08%) aligned discordantly 1 time
+    ----
+    16987617 pairs aligned 0 times concordantly or discordantly; of these:
+      33975234 mates make up the pairs; of these:
+        7682257 (22.61%) aligned 0 times
+        3613 (0.01%) aligned exactly 1 time
+        26289364 (77.38%) aligned >1 times
+86.23% overall alignment rate
+

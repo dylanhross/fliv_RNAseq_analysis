@@ -1,0 +1,75 @@
+GSEA paper
+https://www-nature-com/articles/s41596-018-0103-9
+
+Protocol
+Published: 21 January 2019
+Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap
+Jüri Reimand, Ruth Isserlin, Veronique Voisin, Mike Kucera, Christian Tannus-Lopes, Asha Rostamianfar, Lina Wadi, Mona Meyer, Jeff Wong, Changjiang Xu, Daniele Merico & Gary D. Bader 
+Nature Protocols volume 14, pages482–517 (2019)
+
+-------------------------------------------------------------------------------
+
+GSEA documentation
+https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Using_RNA-seq_Datasets_with_GSEA
+
+Alternative Method: GSEA-Preranked
+This previously served as the GSEA team's recommended pipeline for analysis of RNA-seq data, however, we now recommend the normalized counts procedure described above. As an alternative to standard GSEA, analysis of data derived from RNA-seq experiments may also be conducted through the GSEA-Preranked tool.
+
+In particular:
+Prior to conducting gene set enrichment analysis, conduct your differential expression analysis using any of the tools developed by the bioinformatics community (e.g., cuffdiff, edgeR, DESeq, etc).
+Based on your differential expression analysis, rank your features and capture your ranking in an RNK-formatted file. The ranking metric can be whatever measure of differential expression you choose from the output of your selected DE tool. For example, cuffdiff provides the (base 2) log of the fold change.
+Run GSEAPreranked, if the exact magnitude of the rank metric is not directly biologically meaningful select "classic" for your enrichment score (thus, not weighting each gene's contribution to the enrichment score by the value of its ranking metric).
+Please note that if you choose to use any of the gene sets available from MSigDB in your analysis, you need to make sure that the features listed in your RNK file are genes, and the genes are identified by their HUGO gene symbols. All gene symbols listed in the RNK file must be unique, match the ENSEMBL version used in the targeted version of MSigDB, and we recommend the values of the ranking metrics be unique.
+
+-------------------------------------------------------------------------------
+
+GSEA tutorial
+https://www.youtube.com/watch?v=KY6SS4vRchY
+
+-------------------------------------------------------------------------------
+
+convert mouse gene names to human orthologs
+https://www.biostars.org/p/147484/
+
+Here is a solution using biomaRt (in R) from Ensembl which creates a table that lists all mouse genes and the respective human orthologs. Credits mainly to Dave Tang's blog where the idea is from.
+
+library(biomaRt)
+
+Mouse2Human <- function(MouseGenes){
+
+  human = useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+  mouse = useMart("ensembl", dataset = "mmusculus_gene_ensembl")
+
+  genesMousetoHuman = getLDS(attributes = c("ensembl_gene_id","mgi_symbol"), 
+                             filters = "mgi_symbol", 
+                             values = MouseGenes , 
+                             mart = mouse, 
+                             attributesL = c("ensembl_gene_id", "hgnc_symbol"), 
+                             martL = human, 
+                             uniqueRows = TRUE)
+
+  colnames(genesMousetoHuman) <- c("Mouse.Gene_ID", "MGI", "Human.Gene_ID", "HGNC")
+
+  return(genesMousetoHuman) 
+
+}
+
+## Get mouse genes
+mmusculus_genes <- getBM(attributes = c("ensembl_gene_id", "mgi_symbol"),  
+                         mart = useMart("ensembl", dataset = "mmusculus_gene_ensembl"),
+                         useCache = FALSE)
+
+## create the conversion table
+Mouse2HumanTable <- Mouse2Human(MouseGenes = mmusculus_genes$mgi_symbol)
+
+I tried GSEA with mouse data both by mapping the homologs using a proper method (ensembl/biomaRt as suggested here), and also by simply converting sentence case gene names (i.e. Pdcd1) to upper case (i.e. PDCD1). In my experience, these approaches work similarly.
+
+Using uppercase letters, for the most part, works because human gene names are simply a capitalized version of mouse genes. Although this "conversion" may result in losing a few genes, since you are looking at a constellation of genes in GSEA, I don't think it is a big problem.
+
+-------------------------------------------------------------------------------
+
+GSEA R package
+http://bioconductor.org/packages/release/bioc/html/fgsea.html
+http://bioconductor.org/packages/release/bioc/vignettes/fgsea/inst/doc/fgsea-tutorial.html
+
+

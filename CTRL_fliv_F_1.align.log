@@ -1,0 +1,18 @@
+hisat2 -q -p 16 --pen-noncansplice 1000000 -x ./mm10/genome -1 CTRL_fliv_F_1.fq -2 CTRL_fliv_F_1.fq -S CTRL_fliv_F_1.sam
+Warning: Same mate file "CTRL_fliv_F_1.fq" appears as argument to both -1 and -2
+24547485 reads; of these:
+  24547485 (100.00%) were paired; of these:
+    24540932 (99.97%) aligned concordantly 0 times
+    26 (0.00%) aligned concordantly exactly 1 time
+    6527 (0.03%) aligned concordantly >1 times
+    ----
+    24540932 pairs aligned concordantly 0 times; of these:
+      10173973 (41.46%) aligned discordantly 1 time
+    ----
+    14366959 pairs aligned 0 times concordantly or discordantly; of these:
+      28733918 mates make up the pairs; of these:
+        3684770 (12.82%) aligned 0 times
+        2092 (0.01%) aligned exactly 1 time
+        25047056 (87.17%) aligned >1 times
+92.49% overall alignment rate
+

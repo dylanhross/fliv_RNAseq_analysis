@@ -1,0 +1,44 @@
+class: DESeqDataSet 
+dim: 6 14 
+metadata(1): version
+assays(6): counts mu ... replaceCounts replaceCooks
+rownames(6): Gm19938 Rp1 ... Gm6085 Gm6123
+rowData names(23): baseMean baseVar ... maxCooks replace
+colnames(14): BC12_fliv_G_1.sort.bam BC12_fliv_G_2.sort.bam ...
+  CTRL_fliv_F_1.sort.bam CTRL_fliv_F_2.sort.bam
+colData names(3): condition sizeFactor replaceable
+
+out of 24021 with nonzero total read count
+adjusted p-value < 0.1
+LFC > 0 (up)       : 647, 2.7%
+LFC < 0 (down)     : 392, 1.6%
+outliers [1]       : 169, 0.7%
+low counts [2]     : 9404, 39%
+(mean count < 6)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+
+[1] "mean of normalized counts for all samples"     
+[2] "log2 fold change (MLE): condition CTRL vs BC12"
+[3] "standard error: condition CTRL vs BC12"        
+[4] "Wald statistic: condition CTRL vs BC12"        
+[5] "Wald test p-value: condition CTRL vs BC12"     
+[6] "BH adjusted p-values"                          
+
+out of 24021 with nonzero total read count
+adjusted p-value < 0.1
+LFC > 0 (up)       : 653, 2.7%
+LFC < 0 (down)     : 386, 1.6%
+outliers [1]       : 169, 0.7%
+low counts [2]     : 9404, 39%
+(mean count < 6)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+
+[1] "mean of normalized counts for all samples"     
+[2] "log2 fold change (MAP): condition CTRL vs BC12"
+[3] "posterior SD: condition CTRL vs BC12"          
+[4] "Wald test p-value: condition CTRL vs BC12"     
+[5] "BH adjusted p-values"                          
+[1] "plotting individual_genes (padj < 0.05)..."
+[1] "... done"

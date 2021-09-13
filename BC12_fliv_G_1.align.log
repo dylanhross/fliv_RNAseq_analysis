@@ -1,0 +1,21 @@
+ hisat2 -q -p16 --pen-noncansplice 1000000 -x mm10/genome -1 BC12_fliv_G_1.fq -2 BC12_fliv_G_1.fq -S BC12_fliv_G_1.sam
+Warning: Same mate file "BC12_fliv_G_1.fq" appears as argument to both -1 and -2
+^C(ERR): hisat2-align died with signal 2 (INT)
+dylan@xucube:~/hdd2/RNAseq$ hisat2 -q -p16 --pen-noncansplice 1000000 -x mm10/genome -1 BC12_fliv_G_1.fq -2 BC12_fliv_G_1.fq -S BC12_fliv_G_1.sam
+Warning: Same mate file "BC12_fliv_G_1.fq" appears as argument to both -1 and -2
+28687887 reads; of these:
+  28687887 (100.00%) were paired; of these:
+    28679331 (99.97%) aligned concordantly 0 times
+    103 (0.00%) aligned concordantly exactly 1 time
+    8453 (0.03%) aligned concordantly >1 times
+    ----
+    28679331 pairs aligned concordantly 0 times; of these:
+      11025703 (38.44%) aligned discordantly 1 time
+    ----
+    17653628 pairs aligned 0 times concordantly or discordantly; of these:
+      35307256 mates make up the pairs; of these:
+        6933956 (19.64%) aligned 0 times
+        2434 (0.01%) aligned exactly 1 time
+        28370866 (80.35%) aligned >1 times
+87.91% overall alignment rate
+
